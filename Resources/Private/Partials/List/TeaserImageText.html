@@ -1,0 +1,43 @@
+<!-- Partials/Teaser/TeaserImageText.html -->
+
+<article class="col col-sm-{settings.colspan}">
+    <div class="teaser-box teaserimagetext">
+
+        <header class="title">
+
+            <div class="table">
+                <div class="table-cell">
+
+                    <h4>
+                        <f:link.page pageUid="{f:if(condition:'{page.doktype}==3',then:'{page.url}',else:'{page.uid}')}"
+                                     target="{f:if(condition: '{page.doktype}==3', then: '_blank', else: '_self')}">
+                            {page.teaserTitle}
+                        </f:link.page>
+                    </h4>
+
+                    <h5>
+                        {page.teaserSubTitle}
+                    </h5>
+
+                </div>
+
+                <div class="more"><f:link.page pageUid="{page.uid}"><i class="sprite sprites-arrow-white-medium-right"></i></f:link.page></div>
+            </div>
+        </header>
+
+        <f:if condition="{page.teaserImage}">
+
+            <div class="image">
+
+                <f:if condition="{page.teaserImage}">
+                    <f:link.page pageUid="{f:if(condition:'{page.doktype}==3',then:'{page.url}',else:'{page.uid}')}"
+                                 target="{f:if(condition: '{page.doktype}==3', then: '_blank', else: '_self')}">
+                        <f:image src="{page.teaserImage.uid}" treatIdAsReference="1" alt="{page.teaserImage.title}" width="330c" height="180c"/>
+                    </f:link.page>
+                </f:if>
+            </div>
+
+        </f:if>
+
+    </div>
+</article>

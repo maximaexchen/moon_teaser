@@ -1,0 +1,23 @@
+<!-- Partials/Teaser/TeaserImageTitle.html -->
+
+<article class="col col-sm-{settings.colspan}">
+    <div class="teaser-box">
+
+        <header class="title">
+
+            <div class="css-table">
+                <div class="css-table-cell">
+
+                    <h4>
+                        <f:link.page pageUid="{f:if(condition:'{page.doktype}==3',then:'{page.url}',else:'{page.uid}')}"
+                                     target="{f:if(condition: '{page.doktype}==3', then: '_blank', else: '_self')}">
+                            {page.teaserTitle}
+                        </f:link.page>
+                    </h4>
+
+                </div>
+            </div>
+        </header>
+
+    </div>
+</article>

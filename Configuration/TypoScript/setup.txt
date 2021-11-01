@@ -1,0 +1,60 @@
+
+plugin.tx_moonteaser {
+	view {
+		templateRootPaths {
+			0 = EXT:moon_teaser/Resources/Private/Templates/
+			1 = {$plugin.tx_moonteaser.view.templateRootPath}
+		}
+
+		partialRootPaths {
+			0 = EXT:moon_teaser/Resources/Private/Partials/
+			1 = {$plugin.tx_moonteaser.view.partialRootPath}
+		}
+
+		layoutRootPaths {
+			0 = EXT:moon_teaser/Resources/Private/Layouts/
+			1 = {$plugin.tx_moonteaser.view.layoutRootPath}
+		}
+	}
+
+	#persistence {
+	#	storagePid = {$plugin.tx_moonteaser.persistence.storagePid}
+	#}
+}
+
+
+config.tx_extbase {
+	persistence{
+		enableAutomaticCacheClearing = 1
+		updateReferenceIndex = 0
+		classes {
+			Moon\MoonTeaser\Domain\Model\Pages {
+				mapping {
+					tableName = pages
+					columns {
+						uid.mapOnProperty = uid
+						pid.mapOnProperty = pid
+						sorting.mapOnProperty = sorting
+						title.mapOnProperty = title
+						url.mapOnProperty = url
+						doktype.mapOnProperty = doktype
+						mount_pid.mapOnProperty = mountPid
+
+						subtitle.mapOnProperty = subtitle
+
+						tx_moonteaser_title.mapOnProperty = teaserTitle
+						tx_moonteaser_sub_title.mapOnProperty = teaserSubTitle
+						tx_moonteaser_description.mapOnProperty = teaserDescription
+						tx_moonteaser_image.mapOnProperty = teaserImage
+						tx_moonteaser_icon.mapOnProperty = teaserIcon
+						tx_moonteaser_hidden.mapOnProperty = teaserHidden
+						tx_moonteaser_content.mapOnProperty = teaserContent
+						tx_moonteaser_css_class.mapOnProperty = teaserCssClass
+
+						tx_gridelements_container.mapOnProperty = txGridelementsContainer
+					}
+				}
+			}
+		}
+	}
+}
