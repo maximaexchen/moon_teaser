@@ -1,0 +1,175 @@
+###################
+# compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+############
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+*.pdb
+*.dll.config
+*.cache
+*.suo
+# Include dlls if they’re in the NuGet packages directory
+!/packages/*/lib/*.dll
+# Include dlls if they're in the CommonReferences directory
+!*CommonReferences/*.dll
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+####################
+# VS Upgrade stuff #
+####################
+UpgradeLog.XML
+_UpgradeReport_Files/
+
+
+###############
+# Directories #
+###############
+
+###################
+# Web publish log #
+###################
+
+#############
+# Resharper #
+#############
+
+
+# Logs and databases #
+######################
+*.log
+
+# OS generated files #
+######################
+.DS_Store*
+
+######################
+# Logs and databases #
+######################
+
+*.log
+*.sqlite
+#*.sql
+
+
+######################
+# OS generated files #
+######################
+
+.DS_Store?
+.DS_Store
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+######################
+# Developement Stuff #
+######################
+
+##################################
+# Typo3 specific files & folders #
+##################################
+
+############
+# Symlinks #
+############
+
+##############
+# Temp files #
+##############
+temp_*.*
+
+##########
+# Config #
+##########
+
+# Translation #
+###############
+
+# User Upload #
+###############
+
+
+##################################
+# Software & IDE files & folders #
+##################################
+
+# PhpStorm #
+############
+/.idea
+
+# Espresso #
+############
+
+####################
+# TYPO3 CMS
+# global ignore file
+####################
+
+##########################################
+# Ignore temporary files (left by editors)
+##########################################
+*~
+*.bak
+*.swp
+
+
+##############################################
+# Ignore by common IDEs used directories/files
+##############################################
+
+nbproject
+*.idea
+*.project
+.buildpath
+.project
+.settings
+.TemporaryItems
+.webprj
+
+####################
+# Ignore build stuff
+####################
+.cache
+.sass-cache
+.session
+phantomjsdriver.log
+
+
+#######################
+# Ignore composer stuff
+#######################
+bin/*
+vendor/*
+
+###########################################
+# Ignore common TYPO3 CMS files/directories
+###########################################

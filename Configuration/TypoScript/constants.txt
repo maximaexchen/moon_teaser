@@ -1,0 +1,15 @@
+
+plugin.tx_moonteaser {
+	view {
+		# cat=plugin.tx_moonteaser_moonteaserplugin/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:moon_teaser/Resources/Private/Templates/
+		# cat=plugin.tx_moonteaser_moonteaserplugin/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:moon_teaser/Resources/Private/Partials/
+		# cat=plugin.tx_moonteaser_moonteaserplugin/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:moon_teaser/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_moonteaser_moonteaserplugin//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

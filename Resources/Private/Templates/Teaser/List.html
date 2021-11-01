@@ -1,0 +1,67 @@
+<f:layout name="Default" />
+
+<f:section name="content">
+
+    <f:if condition="{settings.template} == 1">
+        <f:then>
+
+            <div class="teaser-list teaser-all">
+                <div class="row">
+
+                    <f:for each="{pages}" as="page" iteration="itemIteration">
+                        <f:render partial="List/TeaserAll"
+                                  arguments="{active:active, page:page, settings:settings, iterator:itemIteration}"/>
+                    </f:for>
+                </div>
+            </div>
+
+        </f:then>
+    </f:if>
+
+    <f:if condition="{settings.template} == 10">
+        <f:then>
+            <div class="teaser-list teaser-image-title">
+                <div class="row">
+                    <f:for each="{pages}" as="page" iteration="itemIteration">
+
+                        <f:render partial="List/TeaserImageTitle"
+                                  arguments="{active:active, page:page, settings:settings, iterator:itemIteration}"/>
+                    </f:for>
+                </div>
+            </div>
+
+        </f:then>
+    </f:if>
+
+    <f:if condition="{settings.template} == 20">
+        <f:then>
+
+
+
+            <div class="teaser-list teaser-image">
+                <div class="row">
+                    <f:for each="{pages}" as="page" iteration="itemIteration">
+                        <f:render partial="List/TeaserImage"
+                                  arguments="{active:active, page:page, settings:settings, iterator:itemIteration}"/>
+                    </f:for>
+                </div>
+            </div>
+
+        </f:then>
+    </f:if>
+
+    <f:if condition="{settings.template} == 30">
+        <f:then>
+
+            <div class="teaser-list teaser-title equalheight">
+                <div class="row">
+                    <f:for each="{pages}" as="page" iteration="itemIteration">
+                        <f:render partial="List/TeaserTitle"
+                                  arguments="{active:active, page:page, settings:settings, iterator:itemIteration}"/>
+                    </f:for>
+                </div>
+            </div>
+
+        </f:then>
+    </f:if>
+</f:section>
